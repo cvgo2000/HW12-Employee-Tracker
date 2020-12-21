@@ -27,17 +27,17 @@ VALUES
 INSERT INTO
   employee (first_name, last_name, manager_id, role_id)
 VALUES
-  ("Richard", "Smith", null, 1),
+  ("John", "Smith", null, 1),
   ("Barbara", "Jones", 1, 2),
-  ("Robert", "Doe", 1, 3),
-  ("Kyle", "Dylan", 1, 4),
-  ("Shantel", "Adams", 1, 5),
-  ("Dave", "Barbarosa", 1, 6),
-  ("Wayne", "Collins", 3, 7),
+  ("Leah", "Johnson", 1, 3),
+  ("Victor", "Dylan", 1, 4),
+  ("Mary", "Adams", 1, 5),
+  ("Dave", "Hayter", 1, 6),
+  ("Wayne", "Gretzky", 3, 7),
   ("David", "Dobbins", 4, 8),
   ("Dylan", "Evans", 4, 9),
   ("Sean", "Fox", 4, 10),
-  ("Mischelle", "Godnight", 2, 11),
-  ("Ryan", "Howell", 2, 12),
-  ("Linda", "Iglesias", 5, 13),
+  ("Michelle", "Obama", 2, 11),
+  ("Ryan", "Sando", 2, 12),
+  ("Julio", "Iglesias", 5, 13),
   ("Ryan", "Johnson", 5, 14);
