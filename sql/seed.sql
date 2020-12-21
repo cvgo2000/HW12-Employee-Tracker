@@ -1,38 +1,43 @@
-USE employeesDB;
-
-INSERT INTO department (name)
-VALUES ("Sales");
-INSERT INTO department (name)
-VALUES ("Engineering");
-INSERT INTO department (name)
-VALUES ("Finance");
-INSERT INTO department (name)
-VALUES ("Legal");
-
-INSERT INTO role (title, salary, department_id)
-VALUES ("Sales Lead", 100000, 1);
-INSERT INTO role (title, salary, department_id)
-VALUES ("Lead Engineer", 150000, 2);
-INSERT INTO role (title, salary, department_id)
-VALUES ("Software Engineer", 120000, 2);
-INSERT INTO role (title, salary, department_id)
-VALUES ("Accountant", 125000, 3);
-INSERT INTO role (title, salary, department_id)
-VALUES ("Legal Team Lead", 250000, 4);
-
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("John", "Doe", 1, 3);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Mike", "Chan", 2, 1);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Ashley", "Rodriguez", 3, null);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Kevin", "Tupik", 4, 3);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Malia", "Brown", 5, null);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Sarah", "Lourd", 2, null);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Tom", "Allen", 4, 7);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Christian", "Eckenrode", 1, 2);
+USE EmployeeTracker;
+INSERT INTO
+  department (name)
+VALUES
+  ("Executive"),
+  ("Sales"),
+  ("eCommerce"),
+  ("IT"),
+  ("Marketing");
+INSERT INTO
+  role (title, salary, department_id)
+VALUES
+  ("CEO", 1500000, 1),
+  ("VP of Sales", 400000, 2),
+  ("eCommerce Manager", 250000, 3),
+  ("CTO", 450000, 4),
+  ("VP of Marketing", 300000, 5),
+  ("eCommerce Supervisor", 100000, 3),
+  ("Web Designer", 75000, 3),
+  ("DBA", 95000, 4),
+  ("Lead Developer", 120000, 4),
+  ("SysAdmin", 90000, 4),
+  ("Lead Salesman", 60000, 2),
+  ("Sales Analysis", 52000, 2),
+  ("Marketing Supervisor", 82000, 5),
+  ("Marketing Analysis", 54000, 5);
+INSERT INTO
+  employee (first_name, last_name, manager_id, role_id)
+VALUES
+  ("Richard", "Smith", null, 1),
+  ("Barbara", "Jones", 1, 2),
+  ("Robert", "Doe", 1, 3),
+  ("Kyle", "Dylan", 1, 4),
+  ("Shantel", "Adams", 1, 5),
+  ("Dave", "Barbarosa", 1, 6),
+  ("Wayne", "Collins", 3, 7),
+  ("David", "Dobbins", 4, 8),
+  ("Dylan", "Evans", 4, 9),
+  ("Sean", "Fox", 4, 10),
+  ("Mischelle", "Godnight", 2, 11),
+  ("Ryan", "Howell", 2, 12),
+  ("Linda", "Iglesias", 5, 13),
+  ("Ryan", "Johnson", 5, 14);

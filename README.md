@@ -18,7 +18,7 @@ Create a table to organize and plan your business that allows you to view and ma
 
 ## Installation
 
-Clone the repository for this app to your local machine and run the npm install via command line in your terminal to load required dependency packages.
+Clone the repository for this app to your local machine and run the npm install via command line in your terminal to load required dependency packages. Be sure to update the index.js file with your password for your mySQL login.
 
 ## Usage
 
